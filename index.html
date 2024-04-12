@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doggies Gallery</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <script defer src="./main.js"></script>
+
+    <h1><strong>doggies</strong> gallery</h1>
+
+    <span id="error"></span>
+
+    <section id="randomDogys">
+      <article>
+        <div id="random-image-container">
+          <img id="dog-image1" alt="random dog image" />
+          <div id="buttons-container">
+            <button id="add-fav1" class="button">Add</button>
+            <button id="refresh" onclick="getNewDogImages()" class="button">
+              Next
+            </button>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="uploadingDog">
+      <h2>Upload a photo of your doggy</h2>
+      <form id="uploadingForm">
+        <div id="form-container">
+          <input id="file" type="file" name="file" accept="image/*" />
+          <img src="#" alt="Preview uploaded image" id="file-preview" class="display-none"/>
+        </div>
+        <button type="button" onclick="uploadDoggyPhoto()" class="button">
+          Subir foto
+        </button>
+      </form>
+    </section>
+
+    <section id="favoritesDoggies">
+      <h2 id="fav-title">Doggies added</h2>
+      <div id="favorites-container"></div>
+    </section>
+  </body>
+</html>

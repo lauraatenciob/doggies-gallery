@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: aliceblue;
+  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+h1 {
+  color: rgb(28, 31, 41);
+  text-align: center;
+  font-weight: 100;
+}
+
+h2 {
+  color: rgb(28, 31, 41);
+  text-align: center;
+  font-weight: 100;
+}
+
+.button {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  border: none;
+  padding: 10px 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: large;
+  background-color: rgb(28, 31, 41);
+  color: aliceblue;
+  border: solid 1px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.button:hover {
+  background: rgba(28, 31, 41, 0.747);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+#random-image-container {
+  position: relative;
+  width: 100%;
+  height: 85vh;
+  max-width: 90vw;
+  display: block;
+  margin: 0 auto;
+}
+
+#img-container {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  max-width: 250px;
+  aspect-ratio: 1 / 1;
+}
+
+#favorites-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 24px;
+  padding: 36px;
+}
+
+#favoritesDoggies {
+  background-color: rgb(28, 31, 41);
+  width: 100%;
+  padding: 16px;
+}
+
+.btn-delete {
+  background-color: rgba(0, 0, 0, 0.144);
+  text-decoration: none;
+  border: none;
+  font-size: 18px;
+  border-radius: 50%;
+  padding: 10px;
+  width: 36px;
+  height: 36px;
+  color: aliceblue;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  backdrop-filter: blur(5px);
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.btn-delete:hover {
+  background: rgba(28, 31, 41);
+}
+
+#add-fav1 {
+  background-color: rgba(0, 0, 0, 0.103);
+  backdrop-filter: blur(2px);
+  margin: 0;
+  transition: background 0.2s ease-in-out;
+}
+
+#add-fav1:hover {
+  background: rgba(28, 31, 41, 0.568);
+}
+
+#refresh {
+  background-color: rgb(255, 255, 255);
+  color: rgb(28, 31, 41);
+  border: none;
+  backdrop-filter: blur(2px);
+  margin: 0;
+  transition: background 0.2s ease-in-out;
+}
+
+#refresh:hover {
+  background: rgba(255, 255, 255, 0.479);
+}
+
+#uploadingDog {
+  width: 100%;
+  min-height: 35vh;
+  padding: 50px;
+}
+
+#uploadingForm {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+#buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  position: absolute;
+  bottom: 16px;
+  left: 0;
+  right: 0;
+}
+
+#fav-title {
+  color: aliceblue;
+}
+
+input[type="file"] {
+  display: block;
+  margin: 16px auto;
+  width: 350px;
+  max-width: 100%;
+  color: #444;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid rgba(28, 31, 41, 0.384);;
+}
+
+input[type="file"]::file-selector-button {
+  margin-right: 20px;
+  border: none;
+  background: rgb(28, 31, 41);
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: aliceblue;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background: rgba(28, 31, 41, 0.829);
+}
+
+.display {
+  max-width: 100px;
+  aspect-ratio: 1 / 1;
+  display: block;
+  margin: 8px auto;
+
+}
+
+.display-none {
+  display: none;
+}
+
+
+
+
+
+
